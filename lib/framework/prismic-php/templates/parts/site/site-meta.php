@@ -6,7 +6,7 @@ $fb_img = PROTOCOL . HOST . "/assets/images/meta/facebook-share.png";
 $tw_img = PROTOCOL . HOST . "/assets/images/meta/twitter-share.png";
 
 
-$settings = $CONTENT->local->getContent("site-settings", "sites_settings");
+$settings = $CONTENT->local->getContent("site-settings", "site_settings");
 /* --------------- *
 echo "<br><pre>";
 print_r($settings);

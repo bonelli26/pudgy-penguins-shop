@@ -3,46 +3,33 @@
 -------------------------------------------------- */
 
 @font-face {
-	font-family: 'Awesome Serif VAR-VF';
-	src: url("../fonts/Awesome Serif VAR-VF.woff2") format("woff2");
+	font-family: 'Menco-Bold';
+	src: url("../fonts/Menco-Bold.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'GT-Walsheim-Light';
-	src: url("../fonts/GT-Walsheim-Light.woff2") format("woff2");
+	font-family: 'Menco-Medium';
+	src: url("../fonts/Menco-Medium.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'GT-Walsheim-Regular';
-	src: url("../fonts/GT-Walsheim-Regular.woff2") format("woff2");
+	font-family: 'Menco-Black';
+	src: url("../fonts/Menco-Black.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'GT-Walsheim-Medium';
-	src: url("../fonts/GT-Walsheim-Medium.woff2") format("woff2");
+	font-family: 'TTTrailers-Black';
+	src: url("../fonts/TTTrailers-Black.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Inter-Regular';
-	src: url("../fonts/Inter-Regular.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'GT-Alpina-Fine-Standard-Light-Italic';
-	src: url("../fonts/GT-Alpina-Fine-Standard-Light-Italic.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-}
 
 
 

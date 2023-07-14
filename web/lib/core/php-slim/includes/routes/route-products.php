@@ -2,7 +2,7 @@
 /**
  * Products Router
  */
-$GLOBAL->app->get("/products/[{slug}/]", function($request, $response, $args) use ($STOREFRONT, $CONTENT, $app){
+$GLOBAL->app->get("/tienda/[{slug}/]", function($request, $response, $args) use ($STOREFRONT, $CONTENT, $app){
 
 	/* --- Return single product page, or parent --- */
 	if(isset($args["slug"])){
@@ -24,7 +24,7 @@ $GLOBAL->app->get("/products/[{slug}/]", function($request, $response, $args) us
 			not_found_include();
 			return $response;
 		}
-
+		$document = $CONTENT->local->getContent($args["slug"], "product");
 		$title = (isset($object->metafields->global->description_tag)) ? $object->metafields->global->description_tag : ucwords($object->title);
 		$desc = (isset($object->metafields->global->title_tag)) ? $object->metafields->global->title_tag : truncateString(html_entity_decode(strip_tags($object->body_html)), 300);
 

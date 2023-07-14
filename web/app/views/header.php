@@ -34,23 +34,20 @@ if(isset($PAGE["description"]) && $PAGE["description"] != ""){
 }
 ?>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title><?php echo $title; ?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" href="https://use.typekit.net/jzx8dyj.css">
 	<style type="text/css"><?php $file = file_get_contents(FILE_CACHE . "../assets/code/_init.css"); echo $file; ?></style>
 
-<noscript>
-		<link rel="stylesheet" href="<?php echo $ASSETPATH; ?>main.css?v=<?php echo $BUILDINFO->date; ?>" type="text/css" media="all" />
-</noscript>
 
-<?php include(views_dir() . "/parts/site/site-meta.php"); ?>
-<?php include(views_dir() . "/parts/site/site-prefetch.php"); ?>
-<?php include(views_dir() . "/parts/site/site-scripts.php"); ?>
+	<?php include(views_dir() . "/parts/site/site-meta.php"); ?>
+	<?php include(views_dir() . "/parts/site/site-prefetch.php"); ?>
+	<?php include(views_dir() . "/parts/site/site-scripts.php"); ?>
 </head>
 <body>
-	<?php $globalModules = $CONTENT->local->getContent("global-modules", "global_modules")->data; ?>
-	<?php include(views_dir() . "/parts/global-scope.php"); ?>
-	<?php include(views_dir() . "/parts/navigation.php"); ?>
-	<main id="main" data-router-wrapper>
-		<div class="view-<?php echo $namespace; ?>" data-router-view="<?php echo $namespace; ?>">
+<?php $globalModules = $CONTENT->local->getContent("global-modules", "global_modules")->data; ?>
+<?php include(views_dir() . "/parts/global-scope.php"); ?>
+<?php include(views_dir() . "/parts/navigation.php"); ?>
+<main id="main" data-router-wrapper>
+	<div class="view-<?php echo $namespace; ?>" data-router-view="<?php echo $namespace; ?>">

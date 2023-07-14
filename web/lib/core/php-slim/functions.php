@@ -93,6 +93,7 @@ function getByType($type, $sort = null){
 
 	global $CONTENT;
 
+
 	if (file_exists(FILE_CACHE . "documents.json")) {
 		$reference = json_decode(file_get_contents(FILE_CACHE . "documents.json"));
 	}
@@ -102,6 +103,8 @@ function getByType($type, $sort = null){
 	if ($sort === null) {
 		$sort = "first_publication_date desc";
 	}
+
+
 
 	/* --- Loop through content --- */
 	if (!isset($reference) || !isset($reference->{$type}) || count($reference->{$type}) <= 0) {
@@ -157,7 +160,7 @@ function getByType($type, $sort = null){
 		foreach ($reference->{$type} as $content) {
 
 			$uid = base64_decode($content);
-			$info = getContent($uid, $type);
+			$info = $CONTENT->local->getContent($uid, $type);
 
 			array_push($document, $info);
 		}
@@ -191,7 +194,6 @@ class sortPrismicObject{
 
 	public function __construct($key, $direction){
 		$this->key = $key;
-		$this->dir = $direction;
 	}
 
 	public function sortKeys($a, $b){
@@ -202,43 +204,28 @@ class sortPrismicObject{
 			case "category":
 			case "location":
 
-				if ($this->dir == "asc") {
-					return strcmp($a->data->{$this->key}->slug, $b->data->{$this->key}->slug);
-				} else {
-					return strcmp($b->data->{$this->key}->slug, $a->data->{$this->key}->slug);
-				}
+				return strcmp($b->data->{$this->key}->slug, $a->data->{$this->key}->slug);
 
 				break;
 
 			case "published_date":
 			case "title":
 
-				if ($this->dir == "asc") {
-					return strcmp($a->data->{$this->key}, $b->data->{$this->key});
-				} else {
-					return strcmp($b->data->{$this->key}, $a->data->{$this->key});
-				}
+
+			return strcmp($b->data->{$this->key}, $a->data->{$this->key});
 
 				break;
 
 			case "relevance":
 
-				if ($this->dir == "asc") {
-					return strcmp($a->relevance, $b->relevance);
-				} else {
-					return strcmp($b->relevance, $a->relevance);
-				}
+				return strcmp($b->relevance, $a->relevance);
 
 				break;
 
 			case "first_publication_date":
 			default:
 
-				if ($this->dir == "asc") {
-					return strcmp($a->{$this->key}, $b->{$this->key});
-				} else {
-					return strcmp($b->{$this->key}, $a->{$this->key});
-				}
+			return strcmp($b->{$this->key}, $a->{$this->key});
 
 				break;
 		}

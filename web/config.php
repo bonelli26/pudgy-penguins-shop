@@ -9,7 +9,7 @@
  * Change this for the URL of your repository
  */
 define("CONTENT_URL", "https://pudgypenguinsshop.cdn.prismic.io/api/v2");
-define("CONTENT_TOKEN", "MC5aTEJ2SGhJQUFDSUFiQ0ZJ.77-9VO-_ve-_ve-_vR3vv73vv73vv73vv71SSB_vv73vv73vv70KV--_vT7vv71e77-9Dxrvv73vv73vv70C77-9aTw");
+define("CONTENT_TOKEN", "MC5aTERkcHhJQUFDSUFiZVhq.Iu-_vV7vv73vv73vv70i77-9S--_vU_vv73vv73vv71qX3_vv73vv73vv709e--_ve-_vSkf77-977-9FhYG77-9");
 
 /*
  * Webhook Secret

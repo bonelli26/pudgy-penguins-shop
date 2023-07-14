@@ -90,9 +90,6 @@ function not_found_include($exception = null){
 
     /* --- Print our exception code --- */
     if($exception && $exception->getCode() != 0){
-        $PAGE["title"] = $exception->getTitle();
-        $PAGE["description"] = $exception->getDescription();
-
         $code = $exception->getCode();
         $message = $exception;
     }
@@ -112,7 +109,7 @@ function not_found_include($exception = null){
 
     /* --- Get Template --- */
     if(!$exception && file_exists($file_path)){
-        
+
         require($file_path);
 
     } else {

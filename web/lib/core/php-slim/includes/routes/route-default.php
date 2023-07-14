@@ -25,29 +25,29 @@ $GLOBAL->app->get("/{page}/[{slug}/]", function($request, $response, $args) use 
 			/* --- Return 404 --- */
 			not_found_include();
 		}
-		
+
 		return $response;
 	}
 
 	/* --- Otherwise check page --- */
 	try {
-		
+
 		/* --- Get Content --- */
-		$doc = $CONTENT->local->getContent($args["page"], "page");
+		$doc = $CONTENT->local->getContent($args["page"], "work");
 
 		/* --- Throw Exception --- */
 		if(!isset($doc) || $doc === null || $doc->type !== "page") throw new Exception("Error Processing Request", 1);
 
 		/* --- Render Page --- */
-		render($app, "page--" . $args["page"], array("document" => $doc, "namespace" => "page", "type" => "page"));
+		render($app, "type--" . $args["page"], array("document" => $doc, "namespace" => "page", "type" => "page"));
 
 	} catch(\Exception $e){
 
 		/* --- Get Content --- */
 		$doc = $CONTENT->local->getContent($args["page"], "single_".$args["page"]);
-		
+
 		/* --- Check for Page --- */
-		if(!isset($doc) || $doc === null || $doc->uid == "home"){
+		if(!isset($doc) || $doc === null || $doc->uid !== $args["page"] || $doc->uid == "home"){
 
 			/* --- Return 404 --- */
 			not_found_include();

@@ -1,0 +1,224 @@
+/*
+	This file is to store the minimum css needed to
+	render the page upon first load. Anything that
+	javascript needs to measure will need to be set
+	in this file as well, for example: height or width
+	measurements.
+
+	The DOM file load order will look like:
+
+	_fonts.css
+	_init.css
+	main.js
+	main.css
+
+-------------------------------------------------- */
+@import "/normalize";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+/* 	Init CSS
+-------------------------------------------------- */
+
+/* Box sizing */
+* {
+	box-sizing: border-box;
+}
+
+/* Font anti-aliasing in browsers that support it */
+html,
+html a {
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	width: 100%;
+
+	&.touch {
+	}
+}
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+#main {
+
+}
+
+#global-mask, #event-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	display: none;
+}
+#event-mask {
+	z-index: 100;
+}
+#global-loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 110;
+	background:	#5126EC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.inner {
+		position: absolute;
+		height: 375px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 750px;
+	}
+	svg {
+		overflow: visible;
+	}
+}
+.slider {
+	width: 100%;
+	.inner {
+		display: flex;
+		width: 100%;
+	}
+	.slides {
+		width: 100%;
+		overflow: hidden;
+	}
+	.slide {
+		position: relative;
+	}
+}
+.tab-wrapper {
+	position: relative;
+	.tab {
+		color: $black;
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		top: 0;
+		transition: opacity .3s $ease-in-out-sine, visibility 0s 0.3s;
+		&.active {
+			transition: opacity .4s .15s $ease-in-out-sine, visibility 0s .15s;
+			visibility: visible;
+			opacity: 1;
+			position: relative;
+		}
+	}
+	&.no-fade {
+		.tab {
+			transition: none;
+			&.active {
+				transition: none;
+			}
+		}
+	}
+}
+
+.mobile-only {
+	display: none;
+	@media (max-width: 767px) {
+		display: flex;
+	}
+}
+.desktop-only {
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.lottie-scroll, .lottie-enter {
+	position: relative;
+	pointer-events: none;
+	width: 100%;
+	.ar-wrapper {
+		display: block;
+	}
+	.anim {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+}
+
+.ar-wrapper {
+	padding-bottom: var(--dar);
+	height: 0;
+	width: 100%;
+	position: relative;
+	img, video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		object-fit: cover;
+	}
+	@include bp-767 {
+		padding-bottom: var(--mar);
+	}
+}
+
+
+.c-99 {
+	width: 100%;
+	margin: 0 auto;
+	@include get-vw(padding-left, 99px);
+	@include get-vw(padding-right, 99px);
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	@include bp-1024 {
+		padding: 0 50px;
+	}
+
+	@include bp-959 {
+		padding: 0 30px;
+	}
+
+	@include bp-767 {
+		padding: 0 24px;
+	}
+}
+.c-100 {
+	width: 100%;
+	margin: 0 auto;
+	@include get-vw(padding-left, 100px);
+	@include get-vw(padding-right, 100px);
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	@include bp-1024 {
+		padding: 0 50px;
+	}
+
+	@include bp-959 {
+		padding: 0 30px;
+	}
+
+	@include bp-767 {
+		padding: 0 24px;
+	}
+}
+
+

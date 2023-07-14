@@ -1,0 +1,60 @@
+/*
+	FONTS
+
+	- Import all of our fonts
+-------------------------------------------------- */
+@import "_fonts.css";
+
+/*
+	ABSTRACTS
+
+	- Helpers/utils and non-output snippets only
+	- Global variables, mixins, functions etc
+-------------------------------------------------- */
+@import "/abstracts/variables";
+@import "/abstracts/mixins";
+
+/*
+	BASE
+
+	- Global styles
+	- Typography, custom reset styles etc
+-------------------------------------------------- */
+@import "/base/custom-reset";
+@import "/base/typography";
+
+/*
+	COMPONENTS
+
+	- Components reusable across the project
+-------------------------------------------------- */
+//@import "/layout/wysiwyg";
+@import "/ecomm/mini-cart";
+@import "/ecomm/add-to-cart";
+
+/*
+	GLOBAL LAYOUT
+
+	- Styles for the main sections of the layout
+	- Header, footer, navigation, grid etc
+-------------------------------------------------- */
+@import "/layout/navigation";
+@import "/layout/shared";
+@import "/layout/forms";
+@import "/ecomm/mini-cart";
+@import "/layout/header";
+@import "/layout/footer";
+@import "/layout/global";
+/*
+	PLUGINS
+
+	- Third party plugins
+-------------------------------------------------- */
+
+
+/*
+	PAGES / LOCAL TEMPLATES
+-------------------------------------------------- */
+// @import "/lib/framework/prismic-php/css/pages/home";
+// @import "/pages/trial";
+

@@ -110,7 +110,7 @@ if(isset($PAGE["description"]) && $PAGE["description"] != ""){
 				</a>
 			</div>
 		</div>
-		<button class="icon-link hammy mobile">
+		<button class="icon-link hammy mobile" id="hammy">
 			<svg width="45" height="40" viewBox="0 0 45 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M13 13H32" stroke="#33336C" stroke-width="3" stroke-linecap="round"/>
 				<path d="M13 20H32" stroke="#33336C" stroke-width="3" stroke-linecap="round"/>

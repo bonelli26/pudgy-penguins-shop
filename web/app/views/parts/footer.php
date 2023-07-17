@@ -4,7 +4,7 @@
 		<div class="tag"><?php echo $globalModules->footer_tag[0]->text ?></div>
 		<img class="preload-critical header-img" data-preload-desktop="<?php echo $globalModules->footer_header_image->url ?>" data-preload-mobile="<?php echo $globalModules->footer_header_image->url ?>">
 	</div>
-	<div class="marquee footer-marquee mw">
+	<div class="marquee hover footer-marquee mw">
 		<div class="inner" data-dur="<?php echo $globalModules->footer_marquee_duration[0]->text; ?>">
 			<div class="group">
 				<?php foreach ($globalModules->social_block as $block) { ?>

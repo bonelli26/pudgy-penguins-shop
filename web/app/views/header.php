@@ -69,6 +69,7 @@ if(isset($PAGE["description"]) && $PAGE["description"] != ""){
 		<div class="logo">
 			<img class="preload-critical" data-preload-desktop="<?php echo $globalModules->nav_image->url ?>" data-preload-mobile="<?php echo $globalModules->nav_image->url ?>">
 		</div>
+		<div class="nav-mask"></div>
 		<div class="nav-bar mw" id="nav-bar">
 			<div class="left">
 				<?php foreach ($globalModules->link_list as $group) { ?>

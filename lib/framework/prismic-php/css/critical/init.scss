@@ -186,6 +186,7 @@ header {
 	align-items: center;
 	border-bottom: 1px solid #00142D;
 	background: linear-gradient(90deg, #9F8FFF 0%, #FFA3FF 25.33%, #FF8B8B 50.33%, #FFE092 74.81%, #A9FF99 100%);
+	z-index: 2;
 	.group {
 		gap: 48px;
 		margin-right: 48px;
@@ -220,6 +221,7 @@ nav {
 	}
 
 	.nav-bar {
+		position: relative;
 		border-radius: 13px;
 		border: 1px solid #00142D;
 		background: #FFF;
@@ -231,6 +233,7 @@ nav {
 		@include get-vw(padding-right, 20px, 9px);
 		@include get-vw(width, 722px, 722px);
 		height: 62px;
+
 	}
 	.left {
 		display: flex;
@@ -238,7 +241,10 @@ nav {
 		align-items: center;
 	}
 	.link {
-		color: #33336C;
+		color: #fff;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
 		font-family: $ttBlack;
 		font-size: 25px;
 		letter-spacing: 1.75px;
@@ -319,7 +325,17 @@ nav {
 			box-shadow: none;
 		}
 	}
-
+	.nav-mask {
+		position: absolute;
+		opacity: 0.8999999761581421;
+		background: linear-gradient(181deg, #D8EAFF 0%, rgba(217, 217, 217, 0.00) 100%);
+		width: 100%;
+		left: 0;
+		height: 150px;
+		top: 40px;
+		z-index: 1;
+		display: none;
+	}
 	@include bp-1200 {
 		padding-left: 50px;
 		padding-right: 50px;
@@ -334,6 +350,9 @@ nav {
 	@include bp-767 {
 		align-items: flex-start;
 		padding: 18px 18px 0;
+		.nav-mask {
+			display: block;
+		}
 		.logo {
 			position: absolute;
 			left: 50%;
@@ -363,6 +382,7 @@ nav {
 		}
 		.link {
 			font-size: 72px;
+			color: #FBF7EB;
 		}
 		.icon-link {
 			&.mobile {
@@ -413,7 +433,9 @@ body {
 		position: relative;
 		z-index: 3;
 		color: #FFF;
-		text-shadow: -3px 3px #00142d, 1px -1px #00142d, 0px 0px #00142d, -1px 3px #00142d;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
 		font-family: $ttBlack;
 		@include get-vw(font-size, 29px, 29px);
 		line-height: .8;
@@ -457,7 +479,9 @@ body {
 		position: relative;
 		z-index: 3;
 		color: #FFF;
-		text-shadow: -3px 3px #00142d, 1px -1px #00142d, 0px 0px #00142d, -1px 3px #00142d;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
 		font-family: $ttBlack;
 		@include get-vw(font-size, 29px, 29px);
 		line-height: .8;
@@ -642,7 +666,6 @@ body {
 .hero {
 	position: relative;
 	min-height: calc((var(--vh, 1vh) * 100));
-
 	border-bottom: 3px solid #00142D;
 	.hero-wrapper {
 		display: flex;
@@ -687,18 +710,15 @@ body {
 		@include get-vw(height, 35px, 35px);
 	}
 	h1 {
-		@include get-vw(height, 190px, 58px);
-		display: flex;
-		position: relative;
-		img {
-			@include get-vw(height, 190px, 58px);
-			display: flex;
-			width: auto;
-		}
-		span {
-			position: absolute;
-			left: -200%;
-		}
+		color: #FFF;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
+		font-family: $ttBlack;
+		@include get-vw(font-size, 104px, 64px);
+		line-height: .91;
+		letter-spacing: -1.4px;
+		text-transform: uppercase;
 	}
 	.right {
 		position: relative;
@@ -786,7 +806,9 @@ body {
 		}
 		p:last-of-type {
 			color: #FFF;
-			text-shadow: -3px 3px #00142d, 1px -1px #00142d, 0px 0px #00142d, -1px 3px #00142d;
+			text-shadow: -2px 2px #00142d;
+			-webkit-text-stroke: 1px #00142d;
+			text-strke: 1px #00142d;
 			font-family: $ttBlack;
 			@include get-vw(font-size, 96px, 54px);
 			line-height: .91;
@@ -827,7 +849,9 @@ body {
 	}
 	h2 {
 		color: #FFF;
-		text-shadow: -3px 3px #00142d, 1px -1px #00142d, 0px 0px #00142d, -1px 3px #00142d;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
 		font-family: $ttBlack;
 		@include get-vw(font-size, 72px, 56px);
 		line-height: .91;
@@ -849,9 +873,6 @@ body {
 
 	@include bp-767 {
 		padding: 0 24px 24px;
-		.inner {
-			justify-content: unset;
-		}
 	}
 }
 
@@ -870,7 +891,9 @@ body {
 	}
 	h3 {
 		color: #FFF;
-		text-shadow: -3px 3px #00142d, 1px -1px #00142d, 0px 0px #00142d, -1px 3px #00142d;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
 		font-family: $ttBlack;
 		@include get-vw(font-size, 72px, 56px);
 		line-height: .91;
@@ -1020,7 +1043,9 @@ body {
 	}
 	h4 {
 		color: #FFF;
-		text-shadow: -3px 3px #00142d, 1px -1px #00142d, 0px 0px #00142d, -1px 3px #00142d;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
 		font-family: $ttBlack;
 		@include get-vw(font-size, 72px, 56px);
 		line-height: .91;
@@ -1170,10 +1195,17 @@ footer {
 		line-height: 1.45;
 		text-transform: uppercase;
 	}
-	.header-img {
-		display: flex;
-		width: auto;
-		@include get-vw(height, 66px, 52px);
+	.footer-header {
+		color: #FBE9F3;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
+		font-family: $ttBlack;
+		@include get-vw(font-size, 72px, 56px);
+		line-height: .91;
+		letter-spacing: -1.929px;
+		text-transform: uppercase;
+		text-align: center;
 	}
 	.footer-marquee {
 		position: absolute;
@@ -1308,6 +1340,15 @@ footer {
 		right: 0;
 		width: auto;
 	}
+	.images {
+		display: flex;
+		@include get-vw(gap, 9px, 5px);
+		@include get-vw(margin-bottom, 40px, 35px);
+		img {
+			@include get-vw(width, 140px, 78px);
+			@include get-vw(height, 144px, 81px);
+		}
+	}
 	.links {
 		display: flex;
 		justify-content: center;
@@ -1315,7 +1356,10 @@ footer {
 		@include get-vw(gap, 20px, 10px);
 		@include get-vw(margin-bottom, 52px, 37px);
 		a {
-			color: #E9F7FB;
+			color: #fff;
+			text-shadow: -2px 2px #00142d;
+			-webkit-text-stroke: 1px #00142d;
+			text-strke: 1px #00142d;
 			font-family: $ttBlack;
 			@include get-vw(font-size, 48px, 40px);
 			line-height: .91;
@@ -1337,7 +1381,7 @@ footer {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			transition: all .2s $ease-out-sine;
+			transition: all .4s cubic-bezier(.47,1.64,.41,.8);
 			html:not(.touch) & {
 				&:hover {
 					transform: translateY(-5px);
@@ -1403,6 +1447,9 @@ footer {
 	@include bp-767 {
 		padding-left: 5px;
 		padding-right: 5px;
+		.bottom {
+			max-width: 99%;
+		}
 		.links {
 			justify-content: flex-start;
 			a {

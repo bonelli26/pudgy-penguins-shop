@@ -13,10 +13,7 @@ echo "</pre>";
 	<div class="max-width hero-wrapper">
 		<div class="left">
 			<div class="tag"><?php echo $data->hero_tag[0]->text ?></div>
-			<h1 class="hero-header">
-				<img class="preload-critical" data-preload-desktop="<?php echo $data->header_image->url ?>" data-preload-mobile="<?php echo $data->header_image_mobile->url ?>">
-				<span><?php echo $data->hero_header[0]->text ?></span>
-			</h1>
+			<h1><?php echo $data->hero_header[0]->text ?></h1>
 			<p><?php echo $data->hero_intro_text[0]->text ?></p>
 			<a class="rainbow-btn" href="<?php echo $data->hero_button_url[0]->text ?>">
 				<svg xmlns="http://www.w3.org/2000/svg" width="198" height="68" viewBox="0 0 198 68" fill="none">

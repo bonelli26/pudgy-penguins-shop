@@ -334,7 +334,7 @@ nav {
 		height: 150px;
 		top: 40px;
 		z-index: 1;
-		display: none;
+		display: flex;
 	}
 	@include bp-1200 {
 		padding-left: 50px;
@@ -350,9 +350,9 @@ nav {
 	@include bp-767 {
 		align-items: flex-start;
 		padding: 18px 18px 0;
-		.nav-mask {
-			display: block;
-		}
+		//.nav-mask {
+		//	display: block;
+		//}
 		.logo {
 			position: absolute;
 			left: 50%;
@@ -867,12 +867,15 @@ body {
 	}
 	.inner {
 		@include get-vw(gap, 50px, 14px);
-		justify-content: center;
+		//justify-content: center;
 		overflow: visible;
 	}
 
 	@include bp-767 {
 		padding: 0 24px 24px;
+		.best-sellers-wrapper {
+			padding: 0 0px;
+		}
 	}
 }
 

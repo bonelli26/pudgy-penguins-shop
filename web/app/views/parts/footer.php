@@ -94,6 +94,7 @@
 			<?php foreach ($globalModules->socials as $link) { ?>
 				<a href="<?php echo $link->url[0]->text ?>">
 					<img class="preload-critical" data-preload-desktop="<?php echo $link->image->url ?>" data-preload-mobile="<?php echo $link->image->url ?>">
+					<img class="preload-critical" data-preload-desktop="<?php echo $link->hover_image->url ?>" data-preload-mobile="<?php echo $link->hover_image->url ?>">
 					<div class="text-wrapper">
 						<p><?php echo $link->text_1[0]->text ?></p>
 						<p><?php echo $link->text_2[0]->text ?></p>

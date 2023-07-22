@@ -249,6 +249,8 @@ nav {
 		display: flex;
 		@include get-vw(gap, 45px, 20px);
 		align-items: center;
+		perspective: 600px;
+		transform-style: preserve-3d;
 	}
 	.link {
 		color: #fff;
@@ -259,11 +261,12 @@ nav {
 		font-size: 25px;
 		letter-spacing: 1.75px;
 		text-transform: uppercase;
-		transform-origin: left;
+		transform-origin: bottom left;
 		transition: all .4s cubic-bezier(.47,1.64,.41,.8);
+		padding: 7px 0;
 		html:not(.touch) & {
 			&:hover {
-				transform: rotate(-2.776deg) translateY(-3px);
+				transform: rotate(-3deg) translate3d(-1px, -1px, 10px);
 			}
 		}
 	}
@@ -274,17 +277,26 @@ nav {
 	}
 	.icon-link {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		border-radius: 13px;
-		border: 1px solid #00142D;
-		background: #FFF;
-		box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
-		overflow: hidden;
 		@include get-vw(height, 43px, 43px);
 		@include get-vw(width, 47px, 47px);
 		transition: all .4s cubic-bezier(.47,1.64,.41,.8);
+		transform-style: preserve-3d;
+		perspective: 500px;
+		> span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border-radius: 13px;
+			border: 1px solid #00142D;
+			background: #FFF;
+			box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
+			overflow: hidden;
+			@include get-vw(height, 43px, 43px);
+			@include get-vw(width, 47px, 47px);
+			transition: all .4s cubic-bezier(.47,1.64,.41,.8);
+
+		}
 		&.mobile {
 			display: none;
 		}
@@ -314,9 +326,14 @@ nav {
 		}
 		html:not(.touch) & {
 			&:hover {
-				transform: rotate(8deg) translateY(-3px);
-				path {
-					fill: #477dfd;
+				> span {
+					transform: rotate(8deg) translateY(-3px) translateZ(30px);
+					svg {
+						transform: scale(1.1) translateZ(10px);
+					}
+					path {
+						fill: #477dfd;
+					}
 				}
 			}
 		}
@@ -519,34 +536,46 @@ body {
 	@include get-vw(min-width, 284px ,173px);
 	@include get-vw(max-width, 284px ,173px);
 	@include get-vw(height, 430px, 305px);
-	padding: 10px 0;
-	transform-origin: right bottom;
-	transition: all .4s cubic-bezier(.47,1.64,.41,.8);
+
 	html:not(.touch) & {
 		&:hover {
-			transform: rotate(3deg);
-			.ribbon {
-				transform: rotate(45deg) scale(0);
-			}
-			.tag {
-				transform: rotate(-3deg);
-			}
-			.img-wrapper {
-				img:first-of-type {
-					opacity: 0;
-					visibility: hidden;
+			> span {
+				transform: rotate(3deg);
+				.ribbon {
+					transform: rotate(45deg) scale(0);
+				}
+				.tag {
+					transform: rotate(-3deg);
+				}
+				.img-wrapper {
+					img:first-of-type {
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
+				.btn {
+					transform: scale(1);
+				}
+				.type {
+					transform: scale(0);
+				}
+				.name, .price {
+					transform: translateY(-80px);
 				}
 			}
-			.btn {
-				transform: scale(1);
-			}
-			.type {
-				transform: scale(0);
-			}
-			.name, .price {
-				transform: translateY(-80px);
-			}
+
 		}
+	}
+	> span {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 10px 0;
+		transform-origin: right bottom;
+		transition: all .4s cubic-bezier(.47,1.64,.41,.8);
 	}
 	.block {
 		display: flex;
@@ -670,7 +699,7 @@ body {
 	}
 	.btn {
 		transform: scale(0);
-		transition: all .4s cubic-bezier(.47,1.64,.41,.8);
+		transition: all .18s $ease-in-out;
 		position: absolute;
 		z-index: 4;
 
@@ -737,7 +766,7 @@ body {
 	}
 	.right {
 		position: relative;
-		width: 539px;
+		@include get-vw(width, 539px, 286px);
 	}
 	.toy {
 		@include get-vw(height, 539px, 286px);
@@ -766,7 +795,7 @@ body {
 			width: 286px;
 			height: 286px;
 			left: unset;
-			right: 0;
+			right: -50%;
 		}
 	}
 }
@@ -886,6 +915,9 @@ body {
 		padding: 0 24px 24px;
 		.best-sellers-wrapper {
 			padding: 0 0px;
+		}
+		.inner {
+			justify-content: normal;
 		}
 	}
 }
@@ -1131,6 +1163,13 @@ body {
 		@include get-vw(height, 550px, 528px);
 	}
 
+	@include bp-767 {
+		padding-left: 30px;
+		padding-right: 30px;
+		.inner {
+			justify-content: normal;
+		}
+	}
 }
 
 .bottom-marquee {
@@ -1174,6 +1213,12 @@ body {
 	}
 	.marquee {
 		overflow: hidden;
+	}
+
+	@include bp-767 {
+		&:after, &:before {
+			display: none;
+		}
 	}
 }
 

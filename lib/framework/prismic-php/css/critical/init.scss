@@ -277,6 +277,8 @@ nav {
 	}
 	.icon-link {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		@include get-vw(height, 43px, 43px);
 		@include get-vw(width, 47px, 47px);
 		transition: all .4s cubic-bezier(.47,1.64,.41,.8);
@@ -1550,4 +1552,99 @@ footer {
 	}
 }
 
+.collection-hero {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include get-vw(padding-top, 220px, 175px);
+	@include get-vw(padding-bottom, 50px, 50px);
+	@include get-vw(gap, 17px, 10px);
+	background: linear-gradient(162deg, #477DFD 0%, #94DBFF 100%);
+	h1 {
+		color: #FFF;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
+		font-family: $ttBlack;
+		@include get-vw(font-size, 104px, 64px);
+		line-height: .91;
+		letter-spacing: -1.4px;
+		text-transform: uppercase;
+	}
+	p {
+		color: #00142D;
+		text-align: center;
+		font-family: $mencoBold;
+		@include get-vw(font-size, 18px, 16px);
+		line-height: 1.45;
+		text-transform: uppercase;
+		max-width: 687px;
+	}
 
+	@include bp-767 {
+		padding-right: 24px;
+		padding-left: 24px;
+	}
+}
+.collection-grid {
+	position: relative;
+	z-index: 2;
+	border-top: 3px solid #00142D;
+	background: linear-gradient(0deg, rgba(255,255,255,0) 60%, rgba(194,236,255,1) 100%);
+	@include get-vw(padding-left, 240px, 100px);
+	@include get-vw(padding-right, 240px, 100px);
+	@include get-vw(padding-top, 40px, 17px);
+	@include get-vw(padding-bottom, 40px, 17px);
+	.filters {
+		display: flex;
+		justify-content: center;
+		@include get-vw(margin-bottom, 48px, 24px);
+		@include get-vw(gap, 11px, 11px);
+	}
+	.filter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 127px;
+		height: 60px;
+		color: #FFF;
+		text-shadow: -2px 2px #00142d;
+		-webkit-text-stroke: 1px #00142d;
+		text-strke: 1px #00142d;
+		font-family: $ttBlack;
+		@include get-vw(font-size, 29px, 24px);
+		line-height: .91;
+		letter-spacing: -.2px;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 0 10px;
+		transition: all .2s $ease-in;
+		white-space: nowrap;
+		html:not(.touch) & {
+			&:hover {
+				background: #FFFFFF;
+				color: #00142D;
+				text-shadow: 0px 0px;
+				-webkit-text-stroke: unset;
+			}
+		}
+	}
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		row-gap: 35px;
+	}
+
+	@include bp-767 {
+		padding-right: 10px;
+		padding-left: 10px;
+		.filters {
+			overflow: scroll;
+			justify-content: flex-start;
+			margin: 0 10px;
+		}
+	}
+}

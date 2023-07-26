@@ -57,31 +57,31 @@ use Prismic\Dom\RichText;
             <h1><?php echo $data->hero_heading[0]->text ?></h1>
             <div class="description">
                 <p><?php echo $data->hero_text[0]->text ?></p>
-                <ul class="assets-list">         
-                    <?php foreach ($data->icon_text as $group) { ?>     
+                <ul class="assets-list">
+                    <?php foreach ($data->icon_text as $group) { ?>
                         <li><img class="preload" data-preload-desktop="<?php echo $group->icon->url ?>" data-preload-mobile="<?php echo $group->icon->url ?>"><?php echo $group->text[0]->text ?></li>
-                    <?php } ?>             
+                    <?php } ?>
                 </ul>
             </div>
             <div class="option-description">
-                <div class="option-wrapper">  
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.00065 1.3335C4.32487 1.3335 1.33398 4.32406 1.33398 8.00016C1.33398 11.6763 4.32487 14.6668 8.00065 14.6668C11.6764 14.6668 14.6673 11.6763 14.6673 8.00016C14.6673 4.32406 11.6764 1.3335 8.00065 1.3335ZM8.66732 11.3335C8.66732 11.7017 8.36914 12.0002 8.00065 12.0002C7.63216 12.0002 7.33398 11.7017 7.33398 11.3335V6.66683C7.33398 6.29867 7.63216 6.00016 8.00065 6.00016C8.36914 6.00016 8.66732 6.29867 8.66732 6.66683V11.3335ZM8.01367 5.3335C7.64583 5.3335 7.34375 5.03499 7.34375 4.66683C7.34375 4.29867 7.63932 4.00016 8.00716 4.00016H8.01367C8.38216 4.00016 8.68034 4.29867 8.68034 4.66683C8.68034 5.03499 8.38216 5.3335 8.01367 5.3335Z" fill="#9180AB"/></svg>                                                            
-                    <p>Taste like blueberries.</p>                                            
+                <div class="option-wrapper">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.00065 1.3335C4.32487 1.3335 1.33398 4.32406 1.33398 8.00016C1.33398 11.6763 4.32487 14.6668 8.00065 14.6668C11.6764 14.6668 14.6673 11.6763 14.6673 8.00016C14.6673 4.32406 11.6764 1.3335 8.00065 1.3335ZM8.66732 11.3335C8.66732 11.7017 8.36914 12.0002 8.00065 12.0002C7.63216 12.0002 7.33398 11.7017 7.33398 11.3335V6.66683C7.33398 6.29867 7.63216 6.00016 8.00065 6.00016C8.36914 6.00016 8.66732 6.29867 8.66732 6.66683V11.3335ZM8.01367 5.3335C7.64583 5.3335 7.34375 5.03499 7.34375 4.66683C7.34375 4.29867 7.63932 4.00016 8.00716 4.00016H8.01367C8.38216 4.00016 8.68034 4.29867 8.68034 4.66683C8.68034 5.03499 8.38216 5.3335 8.01367 5.3335Z" fill="#9180AB"/></svg>
+                    <p>Taste like blueberries.</p>
                 </div>
-            </div>            
-            <div class="option-triggers trial">   
-                <?php foreach ($data->options as $key => $option) { ?>     
+            </div>
+            <div class="option-triggers trial">
+                <?php foreach ($data->options as $key => $option) { ?>
                     <button class="option-trigger<?php if ($key === 0) { ?> active<?php } ?>" data-link="<?php echo $option->link[0]->text ?>" data-descript="<?php echo $option->option_description[0]->text ?>">
-                        <img class="preload" data-preload-desktop="<?php echo $option->image->url ?>" data-preload-mobile="<?php echo $option->image->url ?>">   
+                        <img class="preload" data-preload-desktop="<?php echo $option->image->url ?>" data-preload-mobile="<?php echo $option->image->url ?>">
                         <?php echo $option->text[0]->text ?>
-                    </button>      
-                <?php } ?>                          
-            </div> 
+                    </button>
+                <?php } ?>
+            </div>
 
-            <form class="atc-form" action="/cart/add">                                        
-                <a class="add-to-cart" target="_blank" href="https://mysweetdreams.co/a/account/groups/join?magic=eyJwcm9kdWN0cyI6W3sic2VsbGluZ1BsYW5QbGF0Zm9ybUlkIjoiNzM3NTQyMTg4IiwicHJvZHVjdFZhcmlhbnRQbGF0Zm9ybUlkIjoiNDA5MDEwMTE4OTg0MTIifV19"> Claim gummies</a>                                                                                                
+            <form class="atc-form" action="/cart/add">
+                <a class="add-to-cart" target="_blank" href="https://mysweetdreams.co/a/account/groups/join?magic=eyJwcm9kdWN0cyI6W3sic2VsbGluZ1BsYW5QbGF0Zm9ybUlkIjoiNzM3NTQyMTg4IiwicHJvZHVjdFZhcmlhbnRQbGF0Zm9ybUlkIjoiNDA5MDEwMTE4OTg0MTIifV19"> Claim gummies</a>
                 <div class="subscription"><?php echo $data->subscription_button[0]->text ?></div>
-            </form>       
+            </form>
         </div>
     </div>
 </section>
@@ -91,8 +91,8 @@ use Prismic\Dom\RichText;
         <h2><?php echo RichText::asHtml($data->trio_heading); ?></h2>
         <div class="trio-wrapper slider no-drag-free mw" data-align="start" data-at="767">
             <div class="slides">
-                <div class="inner">    
-                    <?php foreach ($data->tile as $tile) { ?>                
+                <div class="inner">
+                    <?php foreach ($data->tile as $tile) { ?>
                         <div class="tile slide">
                             <span><?php echo $tile->step[0]->text ?></span>
                             <img class="preload" data-preload-desktop="<?php echo $tile->image->url ?>" data-preload-mobile="<?php echo $tile->image->url ?>">
@@ -100,11 +100,11 @@ use Prismic\Dom\RichText;
                                 <p><?php echo $tile->title[0]->text ?></p>
                                 <p><?php echo $tile->text[0]->text ?></p>
                             </div>
-                        </div>  
-                    <?php } ?>  
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
-            <div class="dots">            
+            <div class="dots">
                 <button class="dot active"></button>
                 <button class="dot"></button>
                 <button class="dot"></button>
@@ -118,15 +118,15 @@ use Prismic\Dom\RichText;
         <div class="left">
             <h3><?php echo RichText::asHtml($data->benefits_heading); ?></h3>
             <div class="left-inner">
-                <?php foreach ($data->benefit_group as $group) { ?>      
+                <?php foreach ($data->benefit_group as $group) { ?>
                     <div class="benefit-group">
                         <img class="preload" data-preload-desktop="<?php echo $group->image->url ?>" data-preload-mobile="<?php echo $group->image->url ?>">
                         <div class="group-inner">
                             <div class="title"><?php echo $group->title[0]->text ?></div>
                             <p class="copy"><?php echo $group->copy[0]->text ?></p>
-                        </div>                    
+                        </div>
                     </div>
-                <?php } ?>  
+                <?php } ?>
             </div>
         </div>
         <div class="right">
@@ -134,7 +134,7 @@ use Prismic\Dom\RichText;
                 <img class="preload" data-preload-desktop="<?php echo $data->right_image->url ?>" data-preload-mobile="<?php echo $data->right_image->url ?>">
             </div>
         </div>
-    </div>   
+    </div>
 </section>
 
 <section class="nutrition-facts mw">
@@ -142,7 +142,7 @@ use Prismic\Dom\RichText;
         <h3><?php echo RichText::asHtml($data->nutrition_heading); ?></h3>
         <button class="btn modal-trigger" data-modal="nutrition">View Nutrition Facts</button>
         <div class="inner">
-            <?php foreach ($data->nutrition_tile as $tile) { ?> 
+            <?php foreach ($data->nutrition_tile as $tile) { ?>
                 <div class="tile">
                     <img class="preload" data-preload-desktop="<?php echo $tile->image->url ?>" data-preload-mobile="<?php echo $tile->image->url ?>">
                     <p><?php echo $tile->title[0]->text ?></p>
@@ -155,14 +155,14 @@ use Prismic\Dom\RichText;
             <div class="modal-bg"></div>
             <div class="modal img" data-modal="nutrition">
                 <div class="modal-inner">
-                    <img class="bg preload" src="<?php echo $data->modal_image->url ?>">                       
+                    <img class="bg preload" src="<?php echo $data->modal_image->url ?>">
                 </div>
                 <button class="close-modal">
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9364 9.67866L16.9702 14.3663L11.004 9.67866L9.67813 11.0045L14.3657 16.9707L9.67813 22.9369L11.004 24.2627L16.9702 19.5752L22.9364 24.2627L24.2622 22.9369L19.5746 16.9707L24.2622 11.0045L22.9364 9.67866Z" fill="#1A192E"/></svg>
                 </button>
             </div>
         </div>
-    </div>   
+    </div>
 </section>
 
 <section class="fifty-fifty-graphic mw shift">
@@ -191,13 +191,13 @@ use Prismic\Dom\RichText;
                         <div class="svg-wrapper">
                             <svg width="113" height="19" viewBox="0 0 113 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.4714 17.4968H30.4122V0H28.4714V17.4968ZM33.0125 9.99296H39.4944V8.12155H33.0125V9.99296ZM41.4164 17.4968H43.3572V0H41.4164V17.4968ZM93.1963 0V17.4968H95.1371V0H93.1963ZM100.564 0.0545048H97.5866V2.19845H100.564C102.787 2.19845 104.615 3.99718 104.615 6.2138C104.615 8.43042 102.806 10.2292 100.564 10.2292H97.5866V12.3731H100.564C103.993 12.3731 106.763 9.61141 106.763 6.2138C106.763 2.81619 103.974 0.0545048 100.564 0.0545048ZM57.2631 15.9887C53.4381 15.9887 50.3102 12.9 50.3102 9.08451C50.3102 5.28718 53.4192 2.18028 57.2631 2.18028C61.0882 2.18028 64.2161 5.26901 64.2161 9.08451C64.2161 12.8818 61.0882 15.9887 57.2631 15.9887ZM57.2631 0.0545048C52.251 0.0545048 48.1621 4.1062 48.1621 9.08451C48.1621 14.0628 52.251 18.1145 57.2631 18.1145C62.2753 18.1145 66.3642 14.0628 66.3642 9.08451C66.3642 4.1062 62.2753 0.0545048 57.2631 0.0545048ZM79.3468 15.9887C75.5218 15.9887 72.3939 12.9 72.3939 9.08451C72.3939 5.28718 75.5029 2.18028 79.3468 2.18028C83.1719 2.18028 86.2998 5.26901 86.2998 9.08451C86.2998 12.8818 83.1908 15.9887 79.3468 15.9887ZM79.3468 0.0545048C74.3347 0.0545048 70.2458 4.1062 70.2458 9.08451C70.2458 14.0628 74.3347 18.1145 79.3468 18.1145C84.359 18.1145 88.4479 14.0628 88.4479 9.08451C88.4479 4.1062 84.359 0.0545048 79.3468 0.0545048ZM17.6745 14.6079L15.3192 6.88606H13.1522L16.6005 18.1145H18.7674L24.3072 0.0545048H22.1591L17.6745 14.6079ZM2.14807 0.0545048H0L3.44822 11.283H5.61514L2.14807 0.0545048ZM11.0607 0.0545048L5.52093 18.1145H7.669L13.2276 0.0545048H11.0607ZM111.945 1.5807L111.323 0.0545048H110.833V2.28929H111.172V0.635916L111.851 2.27113V2.28929H111.964L112.661 0.635916V2.30746H113V0.0545048H112.51L111.945 1.5807ZM109.439 2.28929H109.778V0.381545H110.4V0.0545048H108.817V0.381545H109.439V2.28929Z" fill="#DAD0FF" /></svg>
                         </div>
-                        <div class="list-wrapper" data-entrance="bars-scale" data-offset=".8" data-offset-mobile=".8">  
-                            <?php foreach ($data->text_bar_left_1 as $group) { ?> 
+                        <div class="list-wrapper" data-entrance="bars-scale" data-offset=".8" data-offset-mobile=".8">
+                            <?php foreach ($data->text_bar_left_1 as $group) { ?>
                                 <div class="list-el">
                                     <p><?php echo $group->text[0]->text ?></p>
                                     <div class="bar-wrapper"><div class="bar" style="--width: <?php echo $group->bar[0]->text ?>%"></div></div>
-                                </div>     
-                            <?php } ?>                                          
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                     <div class="block shift-element">
@@ -210,13 +210,13 @@ use Prismic\Dom\RichText;
                         <div class="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" width="73" height="23" fill="none"> <g clip-path="url(#a)"><path fill="#DAD0FF" d="M4.703 2.086h9.325V.053H4.704v2.033Zm42.605 10.89h-6.52v-6.76h6.52c2.328 0 3.885 1.358 3.885 3.38s-1.556 3.38-3.885 3.38Zm2.16 1.583c2.232-.641 3.683-2.588 3.683-4.963 0-3.07-2.35-5.135-5.843-5.135h-8.479v18.165h1.958v-7.863h6.637l4.224 7.863h2.117l-4.404-8.034.106-.033Zm-20.8 8.409c4.805 0 8.15-3.413 8.15-8.29V4.46h-2.011v10.077c0 3.766-2.53 6.387-6.14 6.387-2.995 0-6.223-2-6.223-6.387V4.461h-2.012v10.216c0 4.878 3.388 8.29 8.236 8.29Zm35.12-16.143 4.245 9.382h-8.51l4.266-9.382Zm-.941-2.364-8.214 18.165h2.106l2.032-4.654h10.024l2.033 4.654h2.106L64.72 4.46h-1.873ZM9.36 4.119c-5.145 0-9.326 4.225-9.326 9.424 0 5.2 4.181 9.425 9.326 9.425 5.144 0 9.325-4.226 9.325-9.425 0-5.199-4.181-9.424-9.325-9.424Zm0 16.816c-4.033 0-7.315-3.316-7.315-7.392 0-4.076 3.282-7.392 7.315-7.392 4.032 0 7.314 3.316 7.314 7.392 0 4.076-3.282 7.392-7.314 7.392Z" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h73v23H0z" /></clipPath></defs></svg>
                         </div>
-                        <div class="list-wrapper bars-shift">                        
-                            <?php foreach ($data->text_bar_left_2 as $group) { ?> 
+                        <div class="list-wrapper bars-shift">
+                            <?php foreach ($data->text_bar_left_2 as $group) { ?>
                                 <div class="list-el">
                                     <p><?php echo $group->text[0]->text ?></p>
                                     <div class="bar-wrapper"><div class="bar" style="--width: <?php echo $group->bar[0]->text ?>%"></div></div>
-                                </div>     
-                            <?php } ?>                             
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -234,13 +234,13 @@ use Prismic\Dom\RichText;
                         <div class="svg-wrapper">
                             <svg width="113" height="19" viewBox="0 0 113 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.4714 17.4968H30.4122V0H28.4714V17.4968ZM33.0125 9.99296H39.4944V8.12155H33.0125V9.99296ZM41.4164 17.4968H43.3572V0H41.4164V17.4968ZM93.1963 0V17.4968H95.1371V0H93.1963ZM100.564 0.0545048H97.5866V2.19845H100.564C102.787 2.19845 104.615 3.99718 104.615 6.2138C104.615 8.43042 102.806 10.2292 100.564 10.2292H97.5866V12.3731H100.564C103.993 12.3731 106.763 9.61141 106.763 6.2138C106.763 2.81619 103.974 0.0545048 100.564 0.0545048ZM57.2631 15.9887C53.4381 15.9887 50.3102 12.9 50.3102 9.08451C50.3102 5.28718 53.4192 2.18028 57.2631 2.18028C61.0882 2.18028 64.2161 5.26901 64.2161 9.08451C64.2161 12.8818 61.0882 15.9887 57.2631 15.9887ZM57.2631 0.0545048C52.251 0.0545048 48.1621 4.1062 48.1621 9.08451C48.1621 14.0628 52.251 18.1145 57.2631 18.1145C62.2753 18.1145 66.3642 14.0628 66.3642 9.08451C66.3642 4.1062 62.2753 0.0545048 57.2631 0.0545048ZM79.3468 15.9887C75.5218 15.9887 72.3939 12.9 72.3939 9.08451C72.3939 5.28718 75.5029 2.18028 79.3468 2.18028C83.1719 2.18028 86.2998 5.26901 86.2998 9.08451C86.2998 12.8818 83.1908 15.9887 79.3468 15.9887ZM79.3468 0.0545048C74.3347 0.0545048 70.2458 4.1062 70.2458 9.08451C70.2458 14.0628 74.3347 18.1145 79.3468 18.1145C84.359 18.1145 88.4479 14.0628 88.4479 9.08451C88.4479 4.1062 84.359 0.0545048 79.3468 0.0545048ZM17.6745 14.6079L15.3192 6.88606H13.1522L16.6005 18.1145H18.7674L24.3072 0.0545048H22.1591L17.6745 14.6079ZM2.14807 0.0545048H0L3.44822 11.283H5.61514L2.14807 0.0545048ZM11.0607 0.0545048L5.52093 18.1145H7.669L13.2276 0.0545048H11.0607ZM111.945 1.5807L111.323 0.0545048H110.833V2.28929H111.172V0.635916L111.851 2.27113V2.28929H111.964L112.661 0.635916V2.30746H113V0.0545048H112.51L111.945 1.5807ZM109.439 2.28929H109.778V0.381545H110.4V0.0545048H108.817V0.381545H109.439V2.28929Z" fill="#DAD0FF" /></svg>
                         </div>
-                        <div class="list-wrapper" data-entrance="bars-scale" data-offset=".8" data-offset-mobile=".8">                       
-                            <?php foreach ($data->text_bar_right_1 as $group) { ?> 
+                        <div class="list-wrapper" data-entrance="bars-scale" data-offset=".8" data-offset-mobile=".8">
+                            <?php foreach ($data->text_bar_right_1 as $group) { ?>
                                 <div class="list-el">
                                     <p><?php echo $group->text[0]->text ?></p>
                                     <div class="bar-wrapper"><div class="bar" style="--width: <?php echo $group->bar[0]->text ?>%"></div></div>
-                                </div>     
-                            <?php } ?>                             
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                     <div class="block shift-element">
@@ -254,12 +254,12 @@ use Prismic\Dom\RichText;
                             <svg xmlns="http://www.w3.org/2000/svg" width="73" height="23" fill="none"><g clip-path="url(#a)"><path fill="#DAD0FF" d="M4.703 2.086h9.325V.053H4.704v2.033Zm42.605 10.89h-6.52v-6.76h6.52c2.328 0 3.885 1.358 3.885 3.38s-1.556 3.38-3.885 3.38Zm2.16 1.583c2.232-.641 3.683-2.588 3.683-4.963 0-3.07-2.35-5.135-5.843-5.135h-8.479v18.165h1.958v-7.863h6.637l4.224 7.863h2.117l-4.404-8.034.106-.033Zm-20.8 8.409c4.805 0 8.15-3.413 8.15-8.29V4.46h-2.011v10.077c0 3.766-2.53 6.387-6.14 6.387-2.995 0-6.223-2-6.223-6.387V4.461h-2.012v10.216c0 4.878 3.388 8.29 8.236 8.29Zm35.12-16.143 4.245 9.382h-8.51l4.266-9.382Zm-.941-2.364-8.214 18.165h2.106l2.032-4.654h10.024l2.033 4.654h2.106L64.72 4.46h-1.873ZM9.36 4.119c-5.145 0-9.326 4.225-9.326 9.424 0 5.2 4.181 9.425 9.326 9.425 5.144 0 9.325-4.226 9.325-9.425 0-5.199-4.181-9.424-9.325-9.424Zm0 16.816c-4.033 0-7.315-3.316-7.315-7.392 0-4.076 3.282-7.392 7.315-7.392 4.032 0 7.314 3.316 7.314 7.392 0 4.076-3.282 7.392-7.314 7.392Z" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h73v23H0z" /></clipPath></defs></svg>
                         </div>
                         <div class="list-wrapper bars-shift">
-                            <?php foreach ($data->text_bar_right_2 as $group) { ?> 
+                            <?php foreach ($data->text_bar_right_2 as $group) { ?>
                                 <div class="list-el">
                                     <p><?php echo $group->text[0]->text ?></p>
                                     <div class="bar-wrapper"><div class="bar" style="--width: <?php echo $group->bar[0]->text ?>%"></div></div>
-                                </div>     
-                            <?php } ?>                                
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -284,7 +284,7 @@ use Prismic\Dom\RichText;
 			</div>
 			<div class="slides">
 				<div class="inner">
-                    <?php foreach ($data->list_item as $item) { ?> 
+                    <?php foreach ($data->list_item as $item) { ?>
                         <div class="slide">
                             <div class="top">
                                 <div class="number"><?php echo $item->number[0]->text ?></div>
@@ -308,7 +308,7 @@ use Prismic\Dom\RichText;
         data-at="767">
         <div class="slides">
         <div class="inner">
-        <?php foreach ($data->review_tile as $tile) { ?> 
+        <?php foreach ($data->review_tile as $tile) { ?>
             <div class="tile slide">
                 <div class="text-wrapper">
                 <div class="stars">
@@ -333,10 +333,10 @@ use Prismic\Dom\RichText;
             <?php } ?>
         </div>
         </div>
-        <div class="dots">     
+        <div class="dots">
             <button class="dot active"></button>
             <button class="dot"></button>
-            <button class="dot"></button>        
+            <button class="dot"></button>
         </div>
     </div>
     </div>
@@ -347,19 +347,19 @@ use Prismic\Dom\RichText;
         <div class="left">
             <div class="vs-table slide">
                 <div class="vs-left">
-                    <div class="block"></div>  
-                    <?php foreach ($data->vs_left as $item) { ?>               
-                        <div class="block"><p><?php echo $item->text[0]->text ?></p></div>  
-                    <?php } ?>              
+                    <div class="block"></div>
+                    <?php foreach ($data->vs_left as $item) { ?>
+                        <div class="block"><p><?php echo $item->text[0]->text ?></p></div>
+                    <?php } ?>
                 </div>
                 <div class="vs-right">
-                    <div class="col-left">                
+                    <div class="col-left">
                         <div class="block">
                             <img class="preload" data-preload-desktop="<?php echo $data->block_image->url ?>" data-preload-mobile="<?php echo $data->block_image->url ?>">
                         </div>
-                        <?php foreach ($data->check_left as $item) { ?>           
-                            <div class="block">    
-                                <?php if($item->check === true): ?>                    
+                        <?php foreach ($data->check_left as $item) { ?>
+                            <div class="block">
+                                <?php if($item->check === true): ?>
                                     <div class="check-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 42"><path fill="#A1D3A2" d="M20.999.583a20.417 20.417 0 1 0 0 40.834 20.417 20.417 0 0 0 0-40.834Z"/><path fill="#FEFDEF" d="M19.542 27.708c-.28 0-.562-.1-.785-.304l-7-7a1.167 1.167 0 0 1 1.57-1.726l6.2 6.273 10.297-10.342a1.166 1.166 0 1 1 1.602 1.697L20.342 27.389a1.16 1.16 0 0 1-.8.32Z"/><path fill="#1F212B" d="M19.544 28c-.364 0-.713-.135-.982-.38l-7.009-7.01a1.435 1.435 0 0 1-.465-1 1.452 1.452 0 0 1 .377-1.05 1.462 1.462 0 0 1 2.06-.097l6.004 6.074 10.09-10.133c.291-.274.67-.406 1.05-.404.39.01.751.173 1.019.457.268.282.409.653.398 1.042a1.45 1.45 0 0 1-.457 1.02L20.552 27.596a1.458 1.458 0 0 1-1.008.404Zm-6.995-9.334a.881.881 0 0 0-.652.287.87.87 0 0 0-.227.63.868.868 0 0 0 .285.606l7.01 7.01c.307.278.858.282 1.18-.02L31.222 16.1a.873.873 0 0 0 .042-1.242.87.87 0 0 0-.612-.274.854.854 0 0 0-.625.238L19.736 25.157a.293.293 0 0 1-.414 0l-6.2-6.273a.85.85 0 0 0-.573-.218Z"/><path fill="#1F212B" d="M21 42C9.42 42 0 32.58 0 21S9.42 0 21 0s21 9.42 21 21-9.42 21-21 21Zm0-40.834C10.064 1.166 1.167 10.063 1.167 21c0 10.936 8.897 19.834 19.833 19.834 10.937 0 19.834-8.898 19.834-19.834 0-10.937-8.897-19.834-19.834-19.834Z"/><path fill="#1F212B" d="M30.04 5.965a.287.287 0 0 1-.148-.04c-.372-.22-.758-.43-1.148-.622a.292.292 0 0 1 .259-.523c.402.199.802.415 1.186.643a.291.291 0 0 1-.148.543Zm1.75 1.18a.293.293 0 0 1-.177-.06c-.187-.144-.379-.283-.573-.42a.291.291 0 1 1 .335-.477c.201.14.398.285.593.434a.292.292 0 0 1-.177.523Z"/><path fill="#1F212B" d="M21 39.084C11.028 39.084 2.916 30.97 2.916 21S11.028 2.916 21 2.916c2.14 0 4.234.37 6.225 1.1a.292.292 0 1 1-.2.548A17.444 17.444 0 0 0 21 3.5C11.35 3.5 3.5 11.35 3.5 21S11.35 38.5 21 38.5 38.5 30.65 38.5 21a17.54 17.54 0 0 0-5.738-12.958.292.292 0 1 1 .392-.432A18.125 18.125 0 0 1 39.084 21c0 9.971-8.113 18.084-18.084 18.084Z"/></svg>
                                     </div>
@@ -368,14 +368,14 @@ use Prismic\Dom\RichText;
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 42"><path fill="#F37E98" d="M20.999.583a20.416 20.416 0 1 0 0 40.832 20.416 20.416 0 0 0 0-40.832Z"/><path fill="#FDFCEF" d="m22.238 21 6.38-6.381a.874.874 0 1 0-1.237-1.238l-6.38 6.382-6.382-6.382a.872.872 0 0 0-1.238 0 .874.874 0 0 0 0 1.237L19.763 21l-6.382 6.381a.874.874 0 1 0 1.238 1.238L21 22.237l6.381 6.381a.872.872 0 0 0 1.238 0 .875.875 0 0 0 0-1.236L22.238 21Z"/><path fill="#1F212B" d="M21 42C9.42 42 0 32.58 0 21S9.42 0 21 0s21 9.42 21 21-9.42 21-21 21Zm0-40.833C10.064 1.167 1.167 10.064 1.167 21c0 10.936 8.897 19.833 19.833 19.833 10.936 0 19.833-8.897 19.833-19.833 0-10.936-8.897-19.833-19.833-19.833Z"/><path fill="#1F212B" d="M30.04 5.966a.288.288 0 0 1-.148-.041c-.372-.22-.758-.429-1.148-.621a.292.292 0 0 1 .259-.524c.402.2.801.415 1.186.643a.292.292 0 0 1-.148.543Zm1.75 1.18a.293.293 0 0 1-.177-.06c-.188-.144-.379-.284-.573-.42a.291.291 0 1 1 .335-.478c.201.14.398.286.593.435a.292.292 0 0 1-.177.523Z"/><path fill="#1F212B" d="M21.001 39.083C11.03 39.083 2.918 30.971 2.918 21c0-9.97 8.112-18.083 18.083-18.083 2.14 0 4.235.37 6.226 1.1a.292.292 0 1 1-.201.548A17.445 17.445 0 0 0 21.001 3.5c-9.65 0-17.5 7.85-17.5 17.5s7.85 17.5 17.5 17.5 17.5-7.85 17.5-17.5a17.54 17.54 0 0 0-5.737-12.957.292.292 0 0 1 .392-.433A18.125 18.125 0 0 1 39.085 21c0 9.971-8.112 18.083-18.084 18.083Z"/><path fill="#1F212B" d="m22.648 21 6.175-6.175c.221-.22.342-.514.342-.825 0-.312-.121-.605-.341-.825a1.159 1.159 0 0 0-.825-.342c-.312 0-.605.122-.825.342l-6.175 6.175-6.175-6.175a1.159 1.159 0 0 0-.825-.342c-.312 0-.605.122-.825.342-.22.22-.342.513-.342.825 0 .311.121.605.342.825L19.349 21l-6.175 6.175c-.22.22-.342.513-.342.825 0 .311.121.605.342.825.22.22.513.342.825.342.311 0 .604-.122.824-.342L21 22.65l6.175 6.175c.22.22.513.342.825.342.311 0 .604-.122.825-.342.22-.22.341-.514.341-.825 0-.312-.121-.605-.341-.825L22.648 21Zm5.763 7.412a.597.597 0 0 1-.825 0L21 21.825l-6.588 6.587a.597.597 0 0 1-.825 0 .579.579 0 0 1 0-.825L20.174 21l-6.588-6.588a.579.579 0 0 1 0-.825c.22-.22.605-.22.825 0L21 20.175l6.587-6.588c.22-.22.605-.22.825 0a.58.58 0 0 1 0 .825L21.823 21l6.588 6.587a.58.58 0 0 1 0 .825Z"/></svg>
                                     </div>
                                 <?php endif ?>
-                            </div>  
-                        <?php } ?>                                          
+                            </div>
+                        <?php } ?>
                     </div>
-                    <div class="col-right">                    
+                    <div class="col-right">
                         <div class="block"><p><?php echo $data->block_title[0]->text ?></p></div>
-                        <?php foreach ($data->check_right as $item) { ?>           
-                            <div class="block">                        
-                                <?php if($item->check === true): ?>                    
+                        <?php foreach ($data->check_right as $item) { ?>
+                            <div class="block">
+                                <?php if($item->check === true): ?>
                                     <div class="check-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 42"><path fill="#A1D3A2" d="M20.999.583a20.417 20.417 0 1 0 0 40.834 20.417 20.417 0 0 0 0-40.834Z"/><path fill="#FEFDEF" d="M19.542 27.708c-.28 0-.562-.1-.785-.304l-7-7a1.167 1.167 0 0 1 1.57-1.726l6.2 6.273 10.297-10.342a1.166 1.166 0 1 1 1.602 1.697L20.342 27.389a1.16 1.16 0 0 1-.8.32Z"/><path fill="#1F212B" d="M19.544 28c-.364 0-.713-.135-.982-.38l-7.009-7.01a1.435 1.435 0 0 1-.465-1 1.452 1.452 0 0 1 .377-1.05 1.462 1.462 0 0 1 2.06-.097l6.004 6.074 10.09-10.133c.291-.274.67-.406 1.05-.404.39.01.751.173 1.019.457.268.282.409.653.398 1.042a1.45 1.45 0 0 1-.457 1.02L20.552 27.596a1.458 1.458 0 0 1-1.008.404Zm-6.995-9.334a.881.881 0 0 0-.652.287.87.87 0 0 0-.227.63.868.868 0 0 0 .285.606l7.01 7.01c.307.278.858.282 1.18-.02L31.222 16.1a.873.873 0 0 0 .042-1.242.87.87 0 0 0-.612-.274.854.854 0 0 0-.625.238L19.736 25.157a.293.293 0 0 1-.414 0l-6.2-6.273a.85.85 0 0 0-.573-.218Z"/><path fill="#1F212B" d="M21 42C9.42 42 0 32.58 0 21S9.42 0 21 0s21 9.42 21 21-9.42 21-21 21Zm0-40.834C10.064 1.166 1.167 10.063 1.167 21c0 10.936 8.897 19.834 19.833 19.834 10.937 0 19.834-8.898 19.834-19.834 0-10.937-8.897-19.834-19.834-19.834Z"/><path fill="#1F212B" d="M30.04 5.965a.287.287 0 0 1-.148-.04c-.372-.22-.758-.43-1.148-.622a.292.292 0 0 1 .259-.523c.402.199.802.415 1.186.643a.291.291 0 0 1-.148.543Zm1.75 1.18a.293.293 0 0 1-.177-.06c-.187-.144-.379-.283-.573-.42a.291.291 0 1 1 .335-.477c.201.14.398.285.593.434a.292.292 0 0 1-.177.523Z"/><path fill="#1F212B" d="M21 39.084C11.028 39.084 2.916 30.97 2.916 21S11.028 2.916 21 2.916c2.14 0 4.234.37 6.225 1.1a.292.292 0 1 1-.2.548A17.444 17.444 0 0 0 21 3.5C11.35 3.5 3.5 11.35 3.5 21S11.35 38.5 21 38.5 38.5 30.65 38.5 21a17.54 17.54 0 0 0-5.738-12.958.292.292 0 1 1 .392-.432A18.125 18.125 0 0 1 39.084 21c0 9.971-8.113 18.084-18.084 18.084Z"/></svg>
                                     </div>
@@ -384,8 +384,8 @@ use Prismic\Dom\RichText;
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 42"><path fill="#F37E98" d="M20.999.583a20.416 20.416 0 1 0 0 40.832 20.416 20.416 0 0 0 0-40.832Z"/><path fill="#FDFCEF" d="m22.238 21 6.38-6.381a.874.874 0 1 0-1.237-1.238l-6.38 6.382-6.382-6.382a.872.872 0 0 0-1.238 0 .874.874 0 0 0 0 1.237L19.763 21l-6.382 6.381a.874.874 0 1 0 1.238 1.238L21 22.237l6.381 6.381a.872.872 0 0 0 1.238 0 .875.875 0 0 0 0-1.236L22.238 21Z"/><path fill="#1F212B" d="M21 42C9.42 42 0 32.58 0 21S9.42 0 21 0s21 9.42 21 21-9.42 21-21 21Zm0-40.833C10.064 1.167 1.167 10.064 1.167 21c0 10.936 8.897 19.833 19.833 19.833 10.936 0 19.833-8.897 19.833-19.833 0-10.936-8.897-19.833-19.833-19.833Z"/><path fill="#1F212B" d="M30.04 5.966a.288.288 0 0 1-.148-.041c-.372-.22-.758-.429-1.148-.621a.292.292 0 0 1 .259-.524c.402.2.801.415 1.186.643a.292.292 0 0 1-.148.543Zm1.75 1.18a.293.293 0 0 1-.177-.06c-.188-.144-.379-.284-.573-.42a.291.291 0 1 1 .335-.478c.201.14.398.286.593.435a.292.292 0 0 1-.177.523Z"/><path fill="#1F212B" d="M21.001 39.083C11.03 39.083 2.918 30.971 2.918 21c0-9.97 8.112-18.083 18.083-18.083 2.14 0 4.235.37 6.226 1.1a.292.292 0 1 1-.201.548A17.445 17.445 0 0 0 21.001 3.5c-9.65 0-17.5 7.85-17.5 17.5s7.85 17.5 17.5 17.5 17.5-7.85 17.5-17.5a17.54 17.54 0 0 0-5.737-12.957.292.292 0 0 1 .392-.433A18.125 18.125 0 0 1 39.085 21c0 9.971-8.112 18.083-18.084 18.083Z"/><path fill="#1F212B" d="m22.648 21 6.175-6.175c.221-.22.342-.514.342-.825 0-.312-.121-.605-.341-.825a1.159 1.159 0 0 0-.825-.342c-.312 0-.605.122-.825.342l-6.175 6.175-6.175-6.175a1.159 1.159 0 0 0-.825-.342c-.312 0-.605.122-.825.342-.22.22-.342.513-.342.825 0 .311.121.605.342.825L19.349 21l-6.175 6.175c-.22.22-.342.513-.342.825 0 .311.121.605.342.825.22.22.513.342.825.342.311 0 .604-.122.824-.342L21 22.65l6.175 6.175c.22.22.513.342.825.342.311 0 .604-.122.825-.342.22-.22.341-.514.341-.825 0-.312-.121-.605-.341-.825L22.648 21Zm5.763 7.412a.597.597 0 0 1-.825 0L21 21.825l-6.588 6.587a.597.597 0 0 1-.825 0 .579.579 0 0 1 0-.825L20.174 21l-6.588-6.588a.579.579 0 0 1 0-.825c.22-.22.605-.22.825 0L21 20.175l6.587-6.588c.22-.22.605-.22.825 0a.58.58 0 0 1 0 .825L21.823 21l6.588 6.587a.58.58 0 0 1 0 .825Z"/></svg>
                                     </div>
                                 <?php endif ?>
-                            </div>  
-                        <?php } ?>   
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -402,7 +402,7 @@ use Prismic\Dom\RichText;
     <div class="c-175">
         <h6><?php echo RichText::asHtml($data->faq_heading); ?></h6>
         <div class="flex-column">
-            <?php foreach ($data->faq as $group) { ?>   
+            <?php foreach ($data->faq as $group) { ?>
                 <div class="col drawer">
                     <div class="label">
                         <p><?php echo $group->question[0]->text ?></p>
@@ -412,7 +412,7 @@ use Prismic\Dom\RichText;
                         <p><?php echo $group->answer[0]->text ?></p>
                     </div>
                 </div>
-            <?php } ?>  
+            <?php } ?>
         </div>
     </div>
 </section>
@@ -435,14 +435,14 @@ use Prismic\Dom\RichText;
     <div class="marquee insta-marquee">
         <div class="inner" data-dur="7" data-dur-mobile="10">
             <div class="group">
-                <?php foreach ($data->image_tile as $tile) { ?>   
+                <?php foreach ($data->image_tile as $tile) { ?>
                     <img class="tile preload" data-preload-desktop="<?php echo $tile->image->url ?>" data-preload-mobile="<?php echo $tile->image->url ?>">
-                <?php } ?>       
+                <?php } ?>
             </div>
             <div class="group" aria-hidden="true">
-                <?php foreach ($data->image_tile as $tile) { ?>   
+                <?php foreach ($data->image_tile as $tile) { ?>
                     <img class="tile preload" data-preload-desktop="<?php echo $tile->image->url ?>" data-preload-mobile="<?php echo $tile->image->url ?>">
-                <?php } ?>                          
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -460,10 +460,10 @@ use Prismic\Dom\RichText;
                 <div class="credit-cards">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 168 33"><path fill="#E1E7EA" d="M165.048 23.562c0 1.48-1.254 2.692-2.786 2.692h-23.678c-1.532 0-2.785-1.211-2.785-2.692V8.752c0-1.482 1.253-2.693 2.785-2.693h23.678c1.532 0 2.786 1.211 2.786 2.692v14.81Z"/><path fill="#211B36" d="M165.048 23.562c0 1.481-1.253 2.693-2.785 2.693h-17.41s16.435-2.558 20.195-10.098v7.405Zm-16.017-7.405c0 1.144.905 2.02 2.089 2.02s2.089-.876 2.089-2.02c0-1.145-.905-2.02-2.089-2.02s-2.089.875-2.089 2.02Z"/><path fill="#211B36" d="M141.51 14.138h.766v4.039h-.766v-4.04Zm4.178 2.02c0 1.144.906 2.019 2.09 2.019.348 0 .626-.067.975-.202V17.1c-.279.269-.557.404-.975.404-.766 0-1.324-.539-1.324-1.347 0-.74.558-1.346 1.324-1.346.348 0 .626.134.975.404v-.875c-.349-.135-.627-.27-.975-.27-1.184.068-2.09 1.01-2.09 2.087Zm9.332.605-1.114-2.625h-.836l1.741 4.039h.418l1.741-4.04h-.835l-1.115 2.626Zm2.298 1.414h2.229v-.673h-1.462v-1.078h1.392v-.673h-1.392v-.942h1.462v-.673h-2.229v4.039Zm5.293-2.828c0-.74-.487-1.211-1.393-1.211h-1.184v4.039h.766V16.56h.07l1.114 1.616h.975l-1.253-1.683c.557-.135.905-.539.905-1.145Zm-1.602.674h-.209V14.81h.209c.488 0 .766.202.766.606 0 .336-.208.606-.766.606Zm-21.936-1.885h-1.184v4.039h1.114c1.741 0 2.159-1.414 2.159-2.02.069-1.212-.836-2.02-2.089-2.02Zm-.209 3.366h-.209V14.81h.278c1.045 0 1.463.673 1.463 1.346 0 .27-.07 1.347-1.532 1.347Zm5.501-1.818c-.487-.202-.627-.27-.627-.471 0-.27.279-.404.558-.404.209 0 .417.067.626.336l.418-.538c-.348-.337-.696-.471-1.184-.471-.696 0-1.253.47-1.253 1.144 0 .539.278.808.975 1.077.418.135.766.27.766.606 0 .337-.279.539-.627.539a.907.907 0 0 1-.836-.539l-.487.471c.348.539.766.74 1.393.74.835 0 1.393-.538 1.393-1.278 0-.606-.279-.875-1.115-1.212ZM66.855 6.732c-1.28 0-2.548.244-3.73.717a9.778 9.778 0 0 0-3.164 2.043 9.41 9.41 0 0 0-2.113 3.058 9.154 9.154 0 0 0-.742 3.607c0 1.237.252 2.463.742 3.606a9.409 9.409 0 0 0 2.113 3.058 9.779 9.779 0 0 0 3.163 2.043c1.183.474 2.45.717 3.731.717 1.28 0 2.548-.243 3.731-.717a9.78 9.78 0 0 0 3.163-2.043 9.409 9.409 0 0 0 2.114-3.058 9.152 9.152 0 0 0 .742-3.606 9.152 9.152 0 0 0-.742-3.607 9.409 9.409 0 0 0-2.114-3.058 9.78 9.78 0 0 0-3.163-2.043 10.042 10.042 0 0 0-3.73-.717Z"/><path fill="#272642" d="M55.713 6.732c-1.28 0-2.549.244-3.731.717a9.78 9.78 0 0 0-3.163 2.043 9.41 9.41 0 0 0-2.114 3.058 9.154 9.154 0 0 0-.742 3.607c0 1.237.252 2.463.742 3.606a9.41 9.41 0 0 0 2.114 3.058 9.78 9.78 0 0 0 3.163 2.043c1.182.474 2.45.717 3.73.717 1.281 0 2.549-.243 3.732-.717a9.779 9.779 0 0 0 3.163-2.043 9.41 9.41 0 0 0 2.113-3.058 9.154 9.154 0 0 0 .742-3.606 9.154 9.154 0 0 0-.742-3.607 9.41 9.41 0 0 0-2.113-3.058 9.778 9.778 0 0 0-3.163-2.043 10.042 10.042 0 0 0-3.731-.717Z"/><path fill="#1A192E" d="M57.105 16.157c0 3.2 1.655 6.025 4.179 7.728 2.524-1.703 4.178-4.527 4.178-7.729 0-3.2-1.654-6.025-4.178-7.728-2.524 1.703-4.178 4.527-4.178 7.729Z"/><path fill="#211B36" d="M31.338 23.562c0 1.487-1.247 2.692-2.786 2.692H4.875c-1.539 0-2.786-1.205-2.786-2.692V8.752c0-1.488 1.247-2.693 2.786-2.693h23.677c1.539 0 2.786 1.205 2.786 2.692v14.81Z"/><path fill="#fff" d="m10.576 12.79-1.829 5.273s-.464-2.23-.51-2.51c-1.042-2.297-2.578-2.169-2.578-2.169l1.81 6.812v-.002h2.202l3.044-7.403h-2.14Zm1.743 7.406h2l1.208-7.406h-2.024l-1.184 7.406Zm14.15-7.406h-2.104l-3.28 7.406h1.986l.41-1.058h2.504l.213 1.058h1.82L26.47 12.79Zm-2.434 4.934 1.089-2.799.57 2.799h-1.659Zm-5.671-2.775c0-.408.347-.712 1.341-.712.646 0 1.387.454 1.387.454l.324-1.555s-.946-.346-1.874-.346c-2.102 0-3.187.972-3.187 2.203 0 2.225 2.771 1.92 2.771 3.063 0 .196-.16.65-1.315.65-1.157 0-1.92-.41-1.92-.41l-.346 1.491s.74.408 2.171.408c1.434 0 3.423-1.037 3.423-2.526 0-1.791-2.775-1.92-2.775-2.72Z"/><path fill="#9E9E9E" d="m8.505 16.793-.673-3.196s-.304-.693-1.095-.693H3.645s3.942 1.125 4.86 3.889Z"/><path fill="#211B36" d="M120.479 23.562c0 1.487-1.248 2.692-2.786 2.692H94.015c-1.538 0-2.785-1.205-2.785-2.692V8.752c0-1.488 1.247-2.693 2.785-2.693h23.678c1.538 0 2.786 1.205 2.786 2.692v14.81Z"/><path fill="#fff" d="m104.639 13.464-1.471 3.152-1.465-3.152h-1.877v4.528l-2.09-4.528H96.15l-2.135 4.7h1.264l.467-1.05h2.39l.475 1.05h2.413v-3.491l1.601 3.49h1.089l1.637-3.43v3.43h1.199v-4.7h-1.912Zm-8.44 2.635.714-1.642.743 1.642h-1.457Zm19.324-.338 2.171-2.285h-1.544l-1.389 1.457-1.343-1.47h-4.778v4.701h4.621l1.457-1.556 1.42 1.568h1.539l-2.154-2.414Zm-2.894 1.416h-2.793v-.93h2.673v-.89h-2.673v-.88l2.949.007 1.179 1.277-1.335 1.416Z"/></svg>
                 </div>
-                <div class="utility-pages"> 
-                    <?php foreach ($data->footer_links as $link) { ?>           
-                        <a target="_blank" href="<?php echo $link->url[0]->text ?>"><?php echo $link->text[0]->text ?></a> 
-                    <?php } ?>         
+                <div class="utility-pages">
+                    <?php foreach ($data->footer_links as $link) { ?>
+                        <a target="_blank" href="<?php echo $link->url[0]->text ?>"><?php echo $link->text[0]->text ?></a>
+                    <?php } ?>
                 </div>
                 <p class="copyright-mobile"><?php echo $data->footer_copyright[0]->text ?></p>
             </div>

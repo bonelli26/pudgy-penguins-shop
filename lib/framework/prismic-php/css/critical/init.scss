@@ -839,7 +839,7 @@ body {
 			text-transform: uppercase;
 		}
 	}
-	h2 {
+	h2, h3 {
 		color: #FFF;
 		text-shadow: -2px 2px #00142d;
 		-webkit-text-stroke: 1px #00142d;
@@ -1130,7 +1130,7 @@ body {
 	@include get-vw(padding-top, 28px, 28px);
 	@include get-vw(padding-bottom, 90px, 90px);
 	position: relative;
-
+	overflow: hidden;
 	&:after, &:before {
 		content: '';
 		position: absolute;
@@ -1148,7 +1148,7 @@ body {
 	&:before {
 		right: -200px;
 	}
-	h4 {
+	h4, h3 {
 		color: #00142D;
 		text-align: center;
 		font-family: $mencoBlack;

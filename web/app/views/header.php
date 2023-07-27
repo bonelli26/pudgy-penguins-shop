@@ -83,9 +83,6 @@ if(isset($PAGE["description"]) && $PAGE["description"] != ""){
 					</div>
 				</div>
 				<div class="right">
-					<div class="price-wrapper">
-						<p class="line-item-price" data-orig-price="2999">$29.99</p>
-					</div>
 					<button class="remove-btn remove">
 						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
 							<g filter="url(#filter0_d_1221_10272)">
@@ -105,6 +102,9 @@ if(isset($PAGE["description"]) && $PAGE["description"] != ""){
 							</defs>
 						</svg>
 					</button>
+					<div class="price-wrapper">
+						<p class="line-item-price" data-orig-price="2999">$29.99</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -115,7 +115,7 @@ if(isset($PAGE["description"]) && $PAGE["description"] != ""){
 			<p id="cart-subtotal">$29.99</p>
 		</div>
 		<form action="/cart" method="post">
-			<button class="btn black checkout-btn" id="checkout-btn" name="checkout">
+			<button class="pink-btn checkout-btn" id="checkout-btn" name="checkout">
 				Checkout
 			</button>
 		</form>

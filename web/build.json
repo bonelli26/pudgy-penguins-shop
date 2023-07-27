@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"date":1690412005246,"lib":{"core":"php-slim","content_management":"prismic","framework":"prismic-php"}}
+=======
+{"date":1690408766538,"lib":{"core":"php-slim","content_management":"prismic","framework":"prismic-php"}}
+>>>>>>> f8ba7ea57a5d25aa6ddc98b2d25314ba047759ff

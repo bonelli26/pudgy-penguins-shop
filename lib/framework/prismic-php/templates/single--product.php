@@ -11,58 +11,85 @@ echo "</pre>";
 ?>
 
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="svg-grid" viewBox="0 0 1439 3712"><g stroke="#E1DDEC" clip-path="url(#a)" opacity=".2"><path d="M30 3.5h1380M30 47.5h1380M30 91.5h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380M59.5 620V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4m44 616V4"/></g><g stroke="#E1DDEC" clip-path="url(#b)" opacity=".2"><path d="M30 619.5h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1350.5.5V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620m44 616V620"/></g><g stroke="#E1DDEC" clip-path="url(#c)" opacity=".2"><path d="M30 1239.5h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1350.5.5v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616"/></g><g stroke="#E1DDEC" clip-path="url(#d)" opacity=".2"><path d="M30 1859.5h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1350.5.5v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616"/></g><g stroke="#E1DDEC" clip-path="url(#e)" opacity=".2"><path d="M30 2479.5h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1350.5.5v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616"/></g><g stroke="#E1DDEC" clip-path="url(#f)" opacity=".2"><path d="M30 3095.5h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1380 44h1380m-1350.5.5v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616m44 616v-616"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1439v620H0z"/></clipPath><clipPath id="b"><path fill="#fff" d="M0 616h1439v620H0z"/></clipPath><clipPath id="c"><path fill="#fff" d="M0 1236h1439v620H0z"/></clipPath><clipPath id="d"><path fill="#fff" d="M0 1856h1439v620H0z"/></clipPath><clipPath id="e"><path fill="#fff" d="M0 2476h1439v620H0z"/></clipPath><clipPath id="f"><path fill="#fff" d="M0 3092h1439v620H0z"/></clipPath></defs></svg>
-<div class="color-bg"></div>
 <section class="pdp-hero mw">
 	<div class="max-width pdp-hero-inner">
-		<div class="left slider no-drag-free no-loop">
-			<div class="main frame">
-				<div class="slides">
-					<div class="inner">
-						<?php foreach ($data->hero_product_images as $slide) { ?>
-							<?php if($slide->ribbon === true) { ?>
-								<img class="preload ribbon" data-preload-desktop="<?php echo $slide->ribbon_image->url ?>" data-preload-mobile="<?php echo $slide->ribbon_image->url ?>">
-							<?php } ?>
-							<img class="preload-critical" data-preload-desktop="<?php echo $slide->image->url ?>" data-preload-mobile="<?php echo $slide->image->url ?>">
-						<?php } ?>
+		<div class="left">
+			<div class="slider no-drag-free">
+				<?php if($data->hero_ribbon === true) { ?>
+					<img class="preload-critical ribbon" data-preload-desktop="<?php echo $data->ribbon_image->url ?>" data-preload-mobile="<?php echo $data->ribbon_image->url ?>">
+				<?php } ?>
+				<div class="frame">
+					<div class="slides">
+							<div class="inner">
+								<?php foreach ($data->hero_product_images as $slide) { ?>
+									<div class="slide">
+										<img class="preload-critical bg" data-preload-desktop="<?php echo $slide->image->url ?>" data-preload-mobile="<?php echo $slide->image->url ?>">
+									</div>
+								<?php } ?>
+							</div>
 					</div>
 				</div>
-			</div>
-			<div class="thumbnails dots">
-				<?php foreach ($data->variants_slider as $key => $slider) { ?>
-					<div class="thumbnail dot <?php if ($key === 0) { ?>active<?php } ?>">
-						<img class="preload-critical" data-preload-desktop="<?php echo $slider->slide->url ?>" data-preload-mobile="<?php echo $slider->slide->url ?>">
-					</div>
-				<?php } ?>
+				<div class="thumbnails dots">
+					<?php foreach ($data->hero_product_images as $key => $slide) { ?>
+						<button class="thumbnail dot <?php if ($key === 0) { ?>active<?php } ?>">
+							<img class="preload-critical bg" data-preload-desktop="<?php echo $slide->image->url ?>" data-preload-mobile="<?php echo $slide->image->url ?>">
+						</button>
+					<?php } ?>
+				</div>
 			</div>
 		</div>
 		<div class="right">
-			<p><?php echo $data->product_eyebrow->text ?></p>
-			<h1><?php echo $data->product_title->text ?></h1>
+			<p class="eyebrow"><?php echo $data->product_eyebrow[0]->text ?></p>
+			<h1><?php echo $data->product_title[0]->text ?></h1>
 			<div class="price-wrapper">
-				<p><?php echo $data->product_price_1->text ?></p>
-				<p><?php echo $data->product_price_2->text ?></p>
+				<p class="price"><?php echo $data->product_price_1[0]->text ?></p>
+				<p class="old-price"><?php echo $data->product_price_2[0]->text ?>
+					<span><svg width="58" height="28" viewBox="0 0 58 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="1.38793" y1="26.7724" x2="55.7664" y2="1.41531" stroke="#EF928E" stroke-width="2"/>
+					<line x1="2.23317" y1="1.41498" x2="56.6116" y2="26.7721" stroke="#EF928E" stroke-width="2"/>
+					</svg></span>
+				</p>
 			</div>
-			<p class="after-pay">Or 4-interest free payments of $6.99 with</p>
-			<p class="copy"><?php echo $data->product_description->text ?></p>
-			<div class="variant-wrapper">
-				<p><?php echo $data->product_variant_1->text ?></p>
-				<p><?php echo $data->product_variant_2->text ?></p>
+			<div class="after-pay">
+				<p>Or 4-interest free payments of <strong>$6.99 </strong>with</p><img class="preload" src="https://images.prismic.io/pudgypenguinsshop/acd79ef5-7945-4a3a-93cd-36a1aefd54a5_afterpay.png?auto=compress,format"></div>
+			<p class="copy"><?php echo $data->product_description[0]->text ?></p>
+			<div class="variant-wrapper mw">
+				<img class="preload-critical bg" data-preload-desktop="<?php echo $data->variant_ice_block->url ?>" data-preload-mobile="<?php echo $data->variant_ice_block->url ?>">
+				<div class="left-variant variant">
+					<p><?php echo $data->product_variant_1_title[0]->text ?></p>
+					<p><?php echo $data->product_variant_1_value[0]->text ?></p>
+				</div>
+				<div class="right-variant variant">
+					<p><?php echo $data->product_variant_2_title[0]->text ?></p>
+					<p><?php echo $data->product_variant_2_value[0]->text ?></p>
+				</div>
 			</div>
 			<div class="atc-wrapper">
 				<button class="icon-link">
-					<span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-							<path d="M9.57028 17.9599L9.50257 18L9.46207 17.975C-3.41332 10.3098 1.00526 2.9114 5.78429 3.0008C5.93697 3.0008 6.09165 3.01593 6.24499 3.03434C8.16809 3.26519 9.07424 4.32208 9.5025 5.2317C9.92935 4.32279 10.8368 3.26518 12.7607 3.04293C17.6871 2.44181 22.818 10.0519 9.57028 17.9599Z" fill="#33336C"/>
-						</svg>
-					</span>
+					<svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g filter="url(#filter0_d_1216_2734)">
+							<path d="M13.8028 22.406L13.7112 22.4595L13.6564 22.4262C-3.76327 12.2058 2.2148 2.34134 8.68054 2.46054C8.88712 2.46054 9.09639 2.48071 9.30385 2.50526C11.9057 2.81306 13.1317 4.22225 13.7111 5.43507C14.2886 4.22319 15.5164 2.81304 18.1192 2.51671C24.7843 1.71522 31.7262 11.862 13.8028 22.406Z" fill="white"/>
+							<path d="M14.3098 23.2679L14.307 23.2696L14.2154 23.323L13.7007 23.6236L13.1915 23.3139L13.1435 23.2847C4.33955 18.1175 1.06783 12.8235 1.212 8.53245C1.35744 4.20362 4.97336 1.39662 8.69005 1.46055C8.95364 1.46116 9.20651 1.48677 9.42133 1.51219L14.3098 23.2679ZM14.3098 23.2679C23.3699 17.938 26.5581 12.47 26.1779 8.1197C25.796 3.75143 21.8422 1.06354 18.003 1.52349C15.936 1.75953 14.5822 2.62635 13.711 3.62499M14.3098 23.2679L13.711 3.62499M13.711 3.62499C12.8401 2.62567 11.4879 1.75667 9.42138 1.5122L13.711 3.62499Z" stroke="#00142D" stroke-width="2"/>
+						</g>
+						<defs>
+							<filter id="filter0_d_1216_2734" x="0.20752" y="0.459473" width="29.4716" height="26.7987" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+								<feOffset dx="2.47059" dy="2.47059"/>
+								<feComposite in2="hardAlpha" operator="out"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1216_2734"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1216_2734" result="shape"/>
+							</filter>
+						</defs>
+					</svg>
 				</button>
 				<div class="quantity increment-wrapper">
 					<button class="decrease">-</button>
 					<span class="count">1</span>
-					<button class="increase">-</button>
+					<button class="increase">+</button>
 				</div>
-				<button class="add-to-cart">Add To Cart<span>
-							<svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<button class="add-to-cart">Add To Cart<span><svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g filter="url(#filter0_d_1130_7264)">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M4.38927 8.61189H6.74035V7.21661C6.74035 4.04146 9.17416 1.45947 12.1331 1.45947C15.092 1.45947 17.4982 4.04169 17.4982 7.21661V8.61189H20.3189C21.0381 8.61189 21.6191 9.2354 21.6191 10.0072V18.4946C21.6191 21.7595 19.13 24.4595 16.0605 24.4595H8.31668C5.1912 24.4595 2.61914 21.6995 2.61914 18.3456V10.5104C2.61914 9.47182 3.42124 8.61111 4.3891 8.61111L4.38927 8.61189ZM9.20181 8.61189H15.0376V7.21661C15.0376 5.52485 13.7097 4.1008 12.134 4.1008C10.5298 4.1008 9.20266 5.52572 9.20266 7.21661V8.61189H9.20181Z" fill="#F5FDFF"/>
 							<path d="M20.3189 8.11189H17.9982V7.21661C17.9982 3.79936 15.4008 0.959473 12.1331 0.959473C8.86861 0.959473 6.24035 3.79567 6.24035 7.21661V8.11189H4.79148L4.79131 8.11111H4.3891C3.11247 8.11111 2.11914 9.22947 2.11914 10.5104V18.3456C2.11914 21.9418 4.88243 24.9595 8.31668 24.9595H16.0605C19.4403 24.9595 22.1191 22.0002 22.1191 18.4946V10.0072C22.1191 8.99305 21.3469 8.11189 20.3189 8.11189ZM14.5376 8.11189H9.70266V7.21661C9.70266 5.77114 10.8357 4.6008 12.134 4.6008C13.401 4.6008 14.5376 5.76728 14.5376 7.21661V8.11189Z" stroke="#00142D"/>
@@ -78,8 +105,7 @@ echo "</pre>";
 							<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1130_7264" result="shape"/>
 							</filter>
 							</defs>
-							</svg>
-					</span></button>
+							</svg></span></button>
 			</div>
 		</div>
 	</div>
@@ -98,17 +124,17 @@ echo "</pre>";
 <section class="faq-section">
 	<h3><?php echo $data->faq_section_header[0]->text ?></h3>
 	<div class="inner">
-	<?php foreach ($data->faqs as $block) { ?>
-		<div class="drawer">
-			<div class="label">
-				<p><?php echo $block->question[0]->text ?></p>
-				<span>+</span>
+		<?php foreach ($data->faqs as $block) { ?>
+			<div class="drawer">
+				<div class="label">
+					<p><?php echo $block->question[0]->text ?></p>
+					<span>+</span>
+				</div>
+				<div class="drawer-items">
+					<p><?php echo $block->answer[0]->text ?></p>
+				</div>
 			</div>
-			<div class="drawer-items">
-				<p><?php echo $block->answer[0]->text ?></p>
-			</div>
-		</div>
-	<?php } ?>
+		<?php } ?>
 	</div>
 </section>
 <section class="bottom-marquee max-width">

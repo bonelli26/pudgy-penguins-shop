@@ -253,7 +253,8 @@
 			-webkit-text-stroke: 1px #00142d;
 			text-strke: 1px #00142d;
 			text-shadow: -1px 1px #00142D;
-			@include get-vw(width, 275px);
+			white-space: nowrap;
+			@include get-vw(width, 275px, 181px);
 			span {
 				margin-left: 8px;
 			}
@@ -316,7 +317,15 @@
 				margin-bottom: 0;
 			}
 			.atc-wrapper {
-				display: none; //temp
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				padding: 14px 14px 16px;
+				border-radius: 40px 40px 0 0;
+				background: #FFFFFF;
+				height: 23.4vw;
+				z-index: 100;
 			}
 		}
 	}
@@ -325,17 +334,17 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		@include get-vw(padding-top, 68px);
-		@include get-vw(padding-left, 212px);
-		@include get-vw(padding-right, 205px);
-		@include get-vw(padding-bottom, 43px);
-		@include get-vw(gap, 24px, 24px);
+		@include get-vw(padding-top, 68px, 43px);
+		@include get-vw(padding-left, 212px, 130px);
+		@include get-vw(padding-right, 205px, 130px);
+		@include get-vw(padding-bottom, 43px, 22px);
+		@include get-vw(gap, 24px, 15px);
 		.icon {
 			position: absolute;
-			@include get-vw(top, -30px);
-			@include get-vw(right, 44px);
-			@include get-vw(width, 118px);
-			@include get-vw(height, 118px);
+			@include get-vw(top, -30px, -29px);
+			@include get-vw(right, 44px, 7px);
+			@include get-vw(width, 118px, 89px);
+			@include get-vw(height, 118px, 89px);
 		}
 		.text-block {
 			position: relative;
@@ -346,19 +355,13 @@
 			width: 100%;
 			z-index: 2;
 			height: auto;
-			@include get-vw(padding-top, 50px);
-			@include get-vw(padding-right, 60px);
-			@include get-vw(padding-left, 52px);
-			@include get-vw(padding-bottom, 47px);
+			@include get-vw(padding-top, 50px, 27px);
+			@include get-vw(padding-right, 60px, 23px);
+			@include get-vw(padding-left, 52px, 23px);
+			@include get-vw(padding-bottom, 47px, 47px);
 			h2, p {
 				z-index: 1;
 			}
-			//&:nth-of-type(1) {
-			//	@include get-vw(height, 388px);
-			//}
-			//&:nth-of-type(2) {
-			//	@include get-vw(height, 265px);
-			//}
 		}
 		.ice-block {
 			position: absolute;
@@ -377,21 +380,25 @@
 			letter-spacing: -0.02em;
 			text-transform: uppercase;
 			text-align: center;
-			@include get-vw(margin-bottom, 20px);
-			@include get-vw(font-size, 72px);
+			@include get-vw(margin-bottom, 20px, 20px);
+			@include get-vw(font-size, 72px, 32px);
 		}
 		.copy {
 			color: #00142D;
 			font-family: $mencoMedium;
 			line-height: 1.45;
-			@include get-vw(font-size, 21px);
+			@include get-vw(font-size, 21px, 16px);
+		}
+		@include bp-767 {
+			padding-left: 18px;
+			padding-right: 18px;
 		}
 	}
 	.faq-section {
-		@include get-vw(padding-top, 43px);
-		@include get-vw(padding-bottom, 64px);
-		@include get-vw(padding-left, 212px);
-		@include get-vw(padding-right, 205px);
+		@include get-vw(padding-top, 43px, 22px);
+		@include get-vw(padding-bottom, 64px, 33px);
+		@include get-vw(padding-left, 212px, 130px);
+		@include get-vw(padding-right, 205px, 130px);
 		.ice-block {
 			position: absolute;
 			left: 0;
@@ -409,8 +416,8 @@
 			letter-spacing: -0.02em;
 			text-transform: uppercase;
 			text-align: center;
-			@include get-vw(font-size, 104px);
-			@include get-vw(margin-bottom, 35px);
+			@include get-vw(font-size, 104px, 56px);
+			@include get-vw(margin-bottom, 35px, 28px);
 		}
 		.inner {
 			width: 100%;
@@ -427,10 +434,10 @@
 			align-items: flex-start;
 			z-index: 2;
 			height: auto;
-			@include get-vw(padding-left, 58px);
-			@include get-vw(padding-top, 15px);
-			@include get-vw(padding-bottom, 18px);
-			@include get-vw(padding-right, 52px);
+			@include get-vw(padding-left, 58px, 25px);
+			@include get-vw(padding-top, 15px, 15px);
+			@include get-vw(padding-bottom, 18px, 18px);
+			@include get-vw(padding-right, 52px, 25px);
 			&.open {
 				span {
 					transform: rotate(45deg);
@@ -447,8 +454,8 @@
 				overflow: hidden;
 				transform-origin: 0 center;
 				p {
-					padding-top: 34px;
-					@include get-vw(margin-bottom, 88px);
+					@include get-vw(padding-top, 34px, 24px);
+					@include get-vw(margin-bottom, 88px, 34px);
 				}
 			}
 		}
@@ -465,10 +472,10 @@
 			line-height: .91;
 			letter-spacing: -0.02em;
 			text-transform: uppercase;
-			@include get-vw(font-size, 46px);
+			@include get-vw(font-size, 46px, 32px);
 			span {
 				transition: all .25s $ease-in-out-sine;
-				@include get-vw(font-size, 104px);
+				@include get-vw(font-size, 104px, 56px);
 			}
 		}
 		.drawer-items {
@@ -476,8 +483,12 @@
 				color: #00142D;
 				font-family: $mencoMedium;
 				line-height: 1.45;
-				@include get-vw(font-size, 21px);
+				@include get-vw(font-size, 21px, 16px);
 			}
+		}
+		@include bp-767 {
+			padding-left: 18px;
+			padding-right: 18px;
 		}
 	}
 	.best-sellers {
